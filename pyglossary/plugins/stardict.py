@@ -115,6 +115,8 @@ def verifySameTypeSequence(s: str) -> bool:
 
 
 class Reader(object):
+	defiFormats = ("h", "m", "x", "b")
+
 	def __init__(self, glos: GlossaryType):
 		self._glos = glos
 		self.clear()
@@ -449,6 +451,8 @@ class Reader(object):
 
 
 class Writer(object):
+	defiFormats = ("h", "m", "x", "b")
+
 	_dictzip: bool = True
 	_sametypesequence: str = "" # type: Literal["", "h", "m"]
 	_stardict_client: bool = False

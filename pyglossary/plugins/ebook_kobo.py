@@ -84,6 +84,7 @@ def fixFilename(fname: str) -> str:
 
 
 class Writer:
+	defiFormats = ("h",)
 	WORDS_FILE_NAME = "words"
 
 	def __init__(self, glos, **kwargs):

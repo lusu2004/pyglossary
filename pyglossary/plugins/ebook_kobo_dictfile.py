@@ -61,6 +61,8 @@ def unescapeDefi(defi: str) -> str:
 
 
 class Reader(TextGlossaryReader):
+	defiFormats = ("h", "m")
+
 	def isInfoWord(self, word):
 		return False
 
@@ -96,6 +98,8 @@ class Reader(TextGlossaryReader):
 
 
 class Writer(object):
+	defiFormats = ("h", "m")
+
 	_encoding: str = "utf-8"
 
 	def __init__(self, glos: GlossaryType) -> None:

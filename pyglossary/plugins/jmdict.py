@@ -17,6 +17,8 @@ optionsProp = {
 
 
 class Reader(object):
+	defiFormats = ("h",)
+
 	depends = {
 		"lxml": "lxml",
 	}

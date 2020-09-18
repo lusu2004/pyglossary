@@ -173,6 +173,8 @@ additional indexes to dictionary entries.
 """
 
 class Writer(object):
+	defiFormats = ("h", "m", "b")
+
 	depends = {
 		"lxml": "lxml",
 		"bs4": "beautifulsoup4",
